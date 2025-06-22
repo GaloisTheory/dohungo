@@ -87,8 +87,7 @@ notebooks/
 
 ## Testing
 
-```bash
-source .venv/bin/activate
+```bash 
 pytest -q  # Quick test suite (~10 seconds)
 ```
 
