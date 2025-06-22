@@ -194,7 +194,7 @@ cython_debug/
 .cursorindexingignore
 
 # dohungo-specific ignores
-data/                  # Downloaded SGF files and processed data
-checkpoints/           # Model checkpoints
-*.pt                   # PyTorch model files
-*.pth                  # PyTorch model files
+data/
+checkpoints/
+*.pt
+*.pth

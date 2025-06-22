@@ -1,8 +1,8 @@
-# dohungo 🏯 : A Research-Oriented Go Bot
+# dohungo 🏯
 
 > ⚠️ **Work in Progress**: This bot is under active development. 
 
-`dohungo` is a compact, research-oriented Go bot aimed at reproducing strong supervised CNN policies (≈2-dan level) trained on KGS high-dan SGF records. The ultimate goal is to develop a bot capable of beating a 4-dan human player. Further I hope to use the trained bot to do research into the net as well. 
+`dohungo` at the moment is a compact Go bot aimed at reproducing strong supervised CNN policies (≈2-dan level) trained on KGS high-dan SGF records. The ultimate goal is to develop a bot capable of beating a 4-dan human player (me) and use it to do research into how go play evolves within the neural net as it gets stronger. (Hopefully use other stronger bots like KataGo for research at some point too)
 
 **👉 [Quickstart Notebook](notebooks/quickstart.ipynb)** - Interactive demo showing the complete pipeline from SGF download to move prediction in ~10 minutes.
 
