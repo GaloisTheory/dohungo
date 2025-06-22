@@ -1,0 +1,19 @@
+# Configuration for dohungo small CNN model
+
+# Data settings
+data:
+  board_size: 19
+  download: true
+  max_games: 100  # Small dataset for quick training
+
+# Model settings
+model:
+  encoder: "sevenplane"  # Options: "sevenplane", "simple"
+  
+# Training settings
+training:
+  batch_size: 16
+  learning_rate: 1.0
+  optimizer: "adadelta"  # Options: "adadelta", "sgd", "adagrad"
+  epochs: 5
+  num_workers: 0  # Number of data loading workers 

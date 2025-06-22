@@ -1,0 +1,42 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+<<<<CURSOR_RULES
+# Cursor Rules for dohungo
+
+*Always follow these unless the user overrides explicitly.*
+
+## Project overview (context for Cursor)
+*dohungo is a compact, research‑oriented Go bot.  The near‑term goal is to reproduce a strong supervised CNN policy (≈ 2‑dan level trained on KGS high‑dan SGFs, with fully deterministic PyTorch code that runs on CPU or GPU.  
+*Medium‑term goals (outside this initial scaffold) include:
+*Encoder ablations – quantify value of liberty/ko planes.
+*Reinforcement‑learning self‑play – policy‑gradient fine‑tuning on GPU. (We want to develop a bot to beat Dohun, who is approximately 4-dan)
+*Mechanistic interpretability – probe CNN filters/neuron groups for opening biases, later versus stronger models
+*All code generated today must leave space for these extensions (e.g. separate models/, agents/, analysis/).  Keep the baseline simple but extensible.
+
+## Coding conventions
+* Python 3.9+, PEP-8, one import per line.
+* Use `from __future__ import annotations` in every module.
+* All functions/classes **must** have type hints and Google-style docstrings.
+* Prefer `dataclass` where sensible.
+* Guard long-running code under `if __name__ == "__main__":`.
+* Whenever you want to run some code in the termainal, do source .venv/bin/activate to activate the local venv with the right packages installed. 
+
+## Libraries
+* Core stack: **PyTorch**, **PyYAML** (or OmegaConf), **pytest**.
+* Avoid TensorFlow
+
+## File IO & paths
+* Use `pathlib.Path`.
+* Never download into the repository root – write to `data/raw/` and respect `.gitignore`.
+
+## Reproducibility
+* Set `torch.manual_seed(2025)` and `numpy.random.seed(2025)` in `train.py`.
+* Make dataloaders deterministic (`worker_init_fn`).
+
+## Commit hygiene
+* No TODOs without an accompanying `# FIXME(issue-id)` comment.
+* Keep default branch CI-green (`pytest -q`).
+>>>>CURSOR_RULES
