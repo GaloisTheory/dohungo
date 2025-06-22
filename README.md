@@ -12,21 +12,6 @@ The notebook demonstrates:
 - CNN training with real-time metrics
 - Move prediction visualization
 
-## Implementation Status
-
-| Component | Status | Description |
-|-----------|--------|-------------|
-| SGF downloader | ✅ | Downloads professional games from u-go.net |
-| SevenPlaneEncoder | ✅ | 7-plane encoding (stones + liberties + ko + side) |
-| SimpleEncoder | ✅ | 11-plane encoding (detailed liberty counts) |
-| CNN architecture | ✅ | ~450k parameter model (4 conv + FC layers) |
-| Training pipeline | ✅ | PyTorch training with Adadelta optimizer |
-| Interactive play | ✅ | Command-line interface to play against AI |
-| Quickstart notebook | ✅ | End-to-end demo for reviewers |
-| Test suite | ✅ | pytest coverage for core components |
-| RL self-play | 🚧 | Policy gradient fine-tuning (future work) |
-| Mechanistic analysis | 🚧 | CNN filter/neuron interpretability (future work) |
-
 ## Quick Start
 
 ### Option 1: Interactive Demo 
@@ -37,12 +22,12 @@ pip install -r requirements.txt
 jupyter notebook notebooks/quickstart.ipynb
 ```
 
-### Option 2: Full Training
+### Option 2: Full Training (WIP)
 ```bash
 python -m dohungo.train --config configs/small.yaml
 ```
 
-### Option 3: Play Against Trained Model
+### Option 3: Play Against Trained Model (WIP)
 ```bash
 python -m dohungo.play --model checkpoints/best.pt
 ```
