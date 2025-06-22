@@ -4,14 +4,6 @@
 
 `dohungo` is a compact, research-oriented Go bot aimed at reproducing strong supervised CNN policies (≈2-dan level) trained on KGS high-dan SGF records. The ultimate goal is to develop a bot capable of beating a 4-dan human player. Further I hope to use the trained bot to do research into the net as well. 
 
-| Goal | Status |
-|------|--------|
-| SGF downloader |  🚧  |
-| Seven- & 11-plane encoders | ✅ |
-| PyTorch CNN training script | ✅ |
-| Quick-start notebook | ✅ |
-| Reinforcement-learning loop | 🚧 |
-
 **👉 [Quickstart Notebook](notebooks/quickstart.ipynb)** - Interactive demo showing the complete pipeline from SGF download to move prediction in ~10 minutes.
 
 The notebook demonstrates:
